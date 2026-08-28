@@ -1,0 +1,160 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/HistoryCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Completed health checks will appear here and stay on this Mac.",
+        "location": {
+          "startingColumn": 110,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "No history for this device",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Read and write benchmark history",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Throughput",
+        "location": {
+          "startingColumn": 94,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Throughput",
+        "location": {
+          "startingColumn": 95,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Throughput",
+        "location": {
+          "startingColumn": 94,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Throughput",
+        "location": {
+          "startingColumn": 95,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete this local history record",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete history from %@",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld local record%@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete All History",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 59
+        }
+      }
+    ]
+  },
+  "version": 1
+}

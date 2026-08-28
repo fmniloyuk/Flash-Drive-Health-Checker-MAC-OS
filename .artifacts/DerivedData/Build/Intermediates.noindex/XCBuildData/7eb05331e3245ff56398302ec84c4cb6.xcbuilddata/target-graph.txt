@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'FlashScope' in project 'FlashScope'
+➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+Target 'FlashScopeCore' in project 'FlashScope' (no dependencies)

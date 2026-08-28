@@ -1,0 +1,40 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/OverviewCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Used storage",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ used, %@ free",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ used",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ free",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 24
+        }
+      }
+    ]
+  },
+  "version": 1
+}

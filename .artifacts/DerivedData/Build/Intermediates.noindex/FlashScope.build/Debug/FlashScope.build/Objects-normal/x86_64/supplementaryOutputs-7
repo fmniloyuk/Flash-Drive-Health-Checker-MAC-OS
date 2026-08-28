@@ -1,0 +1,30 @@
+{
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Support/RestrictedProcessRunner.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Support/SimulationServices.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/USB/IOKitUSBTopologyService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Verification/DiskArbitrationMountController.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.swiftdeps"
+  }
+}

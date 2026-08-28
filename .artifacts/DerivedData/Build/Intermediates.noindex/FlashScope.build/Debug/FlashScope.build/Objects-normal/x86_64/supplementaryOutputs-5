@@ -1,0 +1,30 @@
+{
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Health/MacOSHealthSignalService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/HealthCheck/HealthCheckSheet.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/PDFReportRenderer.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.swiftdeps"
+  }
+}

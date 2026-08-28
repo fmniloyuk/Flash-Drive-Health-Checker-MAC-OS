@@ -1,0 +1,48 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Sidebar/SidebarView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "FlashScope",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Removable USB Storage",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 9
+        }
+      },
+      {
+        "comment": "",
+        "key": "Simulation Mode",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@, %@, removable USB drive",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Not reported as removable; write benchmarks are disabled",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 63
+        }
+      }
+    ]
+  },
+  "version": 1
+}

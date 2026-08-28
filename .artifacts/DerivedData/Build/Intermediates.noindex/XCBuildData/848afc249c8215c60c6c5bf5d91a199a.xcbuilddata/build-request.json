@@ -1,0 +1,72 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "35eb7d1e5bec2298583130c899748a02957e061c8b344ae8f3f7f59abaf276f0"
+    },
+    {
+      "guid" : "35eb7d1e5bec2298583130c899748a029265631681fd81157afef1504663a88e"
+    },
+    {
+      "guid" : "35eb7d1e5bec2298583130c899748a02feaa7423f563b7ba391f9396f916db61"
+    },
+    {
+      "guid" : "35eb7d1e5bec2298583130c899748a023d6617aabe77dfba03b9e97b6dcd4350"
+    }
+  ],
+  "containerPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "hostTargetedPlatform" : null,
+      "platform" : "macosx",
+      "sdk" : "macosx26.5",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products",
+      "derivedDataPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO",
+          "CODE_SIGNING_REQUIRED" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "test",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

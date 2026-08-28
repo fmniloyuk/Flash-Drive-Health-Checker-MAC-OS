@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests-primary.dia",
+    "emit-module-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests-primary-emit-module.dia",
+    "pch" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests-primary.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScopeIntegrationTests/FlashScopeIntegrationTests.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeIntegrationTests.build/Objects-normal/x86_64/FlashScopeIntegrationTests~partial.swiftmodule"
+  }
+}

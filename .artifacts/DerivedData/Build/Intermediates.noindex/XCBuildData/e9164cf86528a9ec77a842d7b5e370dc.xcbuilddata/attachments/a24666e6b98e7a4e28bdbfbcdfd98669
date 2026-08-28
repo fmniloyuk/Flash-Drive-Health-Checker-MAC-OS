@@ -1,0 +1,319 @@
+{
+  "" : {
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary.dia",
+    "emit-module-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary-emit-module.dia",
+    "pch" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppServices.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppServices~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppViewModel~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/ContentView.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/FlashScopeApp.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScopeApp~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Components/DiagnosticCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiagnosticCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Components/HealthStatusBadge.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthStatusBadge~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/ConnectionCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ConnectionCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/DashboardView.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/FilesystemCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FilesystemCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/FindingsCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FindingsCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/HistoryCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HistoryCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/OverviewCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/OverviewCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/PerformanceCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Discovery/DiskArbitrationDriveDiscoveryService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Discovery/DiskUtilityAdapter.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Features/HelpView.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Health/MacOSHealthSignalService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSHealthSignalService~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/HealthCheck/HealthCheckSheet.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HealthCheckSheet~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SwiftDataHistoryRepository~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/PDFReportRenderer.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PDFReportRenderer~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/ReportExportController.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/ReportExportController~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/AppPreferences~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Sidebar/SidebarView.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SidebarView~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Support/RestrictedProcessRunner.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/RestrictedProcessRunner~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Support/SimulationServices.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/SimulationServices~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/USB/IOKitUSBTopologyService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/IOKitUSBTopologyService~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Verification/DiskArbitrationMountController.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationMountController~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Verification/MacOSFilesystemVerificationService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSFilesystemVerificationService~partial.swiftmodule"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Volume/MacOSVolumeInformationService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.dia",
+    "index-unit-output-path" : "/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.o",
+    "llvm-bc" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.bc",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService.swiftdeps",
+    "swiftmodule" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/MacOSVolumeInformationService~partial.swiftmodule"
+  }
+}

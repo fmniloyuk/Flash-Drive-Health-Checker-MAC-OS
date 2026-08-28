@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>0407552C-5EBE-4C15-B8CD-728C1688BA7F</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0407552C-5EBE-4C15-B8CD-728C1688BA7F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>9</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FlashScope project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FlashScope</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>timeStartedRecording</key>
+			<real>809635846.09502196</real>
+			<key>timeStoppedRecording</key>
+			<real>809635853.93761301</real>
+			<key>title</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>uniqueIdentifier</key>
+			<string>0407552C-5EBE-4C15-B8CD-728C1688BA7F</string>
+		</dict>
+		<key>40E780F1-B3A1-41CA-B1D7-B2700E7AC72A</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>40E780F1-B3A1-41CA-B1D7-B2700E7AC72A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>17</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FlashScope project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FlashScope</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>timeStartedRecording</key>
+			<real>809636090.39249802</real>
+			<key>timeStoppedRecording</key>
+			<real>809636093.8527</real>
+			<key>title</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>uniqueIdentifier</key>
+			<string>40E780F1-B3A1-41CA-B1D7-B2700E7AC72A</string>
+		</dict>
+		<key>8B14FBB3-86A3-4CA2-A93F-4CD96B897B39</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8B14FBB3-86A3-4CA2-A93F-4CD96B897B39.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>9</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FlashScope project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FlashScope</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>timeStartedRecording</key>
+			<real>809635924.51112998</real>
+			<key>timeStoppedRecording</key>
+			<real>809635926.43621099</real>
+			<key>title</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>uniqueIdentifier</key>
+			<string>8B14FBB3-86A3-4CA2-A93F-4CD96B897B39</string>
+		</dict>
+		<key>F1C548E4-7D0D-4203-B6B5-3DCB208A8EF1</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F1C548E4-7D0D-4203-B6B5-3DCB208A8EF1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>17</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FlashScope project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FlashScope</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>timeStartedRecording</key>
+			<real>809635873.90525401</real>
+			<key>timeStoppedRecording</key>
+			<real>809635881.41732395</real>
+			<key>title</key>
+			<string>Testing project FlashScope with scheme FlashScope</string>
+			<key>uniqueIdentifier</key>
+			<string>F1C548E4-7D0D-4203-B6B5-3DCB208A8EF1</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,200 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Verify the filesystem?",
+        "location": {
+          "startingColumn": 13,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose a removable USB storage device from the sidebar.",
+        "location": {
+          "startingColumn": 110,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a USB drive",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unmount Normally and Verify",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close files and Finder windows using this volume. FlashScope will request a normal, non-forced unmount, run read-only verification only, and attempt to remount. It will not repair the filesystem.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "No removable USB drives",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Connect a USB flash drive. FlashScope will inspect it without modifying data until you explicitly start a benchmark.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh removable USB drives",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Review preflight and start a safe benchmark",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Safely eject the selected drive",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel Test",
+        "location": {
+          "startingColumn": 82,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Check",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "PDF Report…",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "JSON Report…",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Plain Text…",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copy Support Summary",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Export",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Eject",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 93
+        }
+      }
+    ]
+  },
+  "version": 1
+}

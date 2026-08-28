@@ -1,0 +1,64 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/FindingsCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Select and inspect a drive to generate findings.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "No specific findings from the available evidence",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "Diagnostic limitations (%lld)",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Caveat: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Evidence",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Confidence %lld percent",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 45
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,48 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/FilesystemCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Compatibility guidance",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Changing filesystem normally requires destructive reformatting. FlashScope provides guidance only and does not perform that action.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "May require a normal unmount",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Requests confirmation before a normal, non-forced unmount. No repair command is run.",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Verify Filesystem…",
+        "location": {
+          "startingColumn": 92,
+          "startingLine": 41
+        }
+      }
+    ]
+  },
+  "version": 1
+}

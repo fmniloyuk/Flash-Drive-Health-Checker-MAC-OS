@@ -1,0 +1,30 @@
+{
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/PerformanceCard.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/PerformanceCard.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Discovery/DiskArbitrationDriveDiscoveryService.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskArbitrationDriveDiscoveryService.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Discovery/DiskUtilityAdapter.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/DiskUtilityAdapter.swiftdeps"
+  },
+  "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Features/HelpView.swift" : {
+    "const-values" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.swiftconstvalues",
+    "dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.d",
+    "diagnostics" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.dia",
+    "object" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.o",
+    "swift-dependencies" : "/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/HelpView.swiftdeps"
+  }
+}

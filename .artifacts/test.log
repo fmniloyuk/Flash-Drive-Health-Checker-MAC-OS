@@ -1,0 +1,567 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project FlashScope.xcodeproj -scheme FlashScope -configuration Debug -destination platform=macOS -derivedDataPath .artifacts/DerivedData CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'FlashScopeUITests' in project 'FlashScope'
+        ➜ Explicit dependency on target 'FlashScope' in project 'FlashScope'
+    Target 'FlashScopeIntegrationTests' in project 'FlashScope'
+        ➜ Explicit dependency on target 'FlashScope' in project 'FlashScope'
+        ➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+    Target 'FlashScopeCoreTests' in project 'FlashScope'
+        ➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+    Target 'FlashScope' in project 'FlashScope'
+        ➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+    Target 'FlashScopeCore' in project 'FlashScope' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 848afc249c8215c60c6c5bf5d91a199a
+Build description path: /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/XCBuildData/848afc249c8215c60c6c5bf5d91a199a.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/SDKStatCaches.noindex/macosx26.5-25F70-e082c4a02f00227109f4ed75e425c832.sdkstatcache
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -o /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/SDKStatCaches.noindex/macosx26.5-25F70-e082c4a02f00227109f4ed75e425c832.sdkstatcache
+Failed to create FS event stream. Considering the cache up-to-date.
+
+note: Disabling hardened runtime with ad-hoc codesigning. (in target 'FlashScope' from project 'FlashScope')
+SwiftDriver FlashScope normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name FlashScope -Onone @/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -target x86_64-apple-macos14.0 -g -module-cache-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Index.noindex/DataStore -swift-version 6 -I /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug -F /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/SDKStatCaches.noindex/macosx26.5-25F70-e082c4a02f00227109f4ed75e425c832.sdkstatcache -output-file-map /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope_const_extract_protocols.json -Xcc -iquote -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-generated-files.hmap -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-own-target-headers.hmap -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope-35eb7d1e5bec2298583130c899748a02-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-project-headers.hmap -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/include -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources-normal/x86_64 -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources/x86_64 -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-Swift.h -working-directory /Users/faisalmahmud/Downloads/FlashScope-fixed3 -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCore.framework/Versions/A/Resources/Info.plist /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeCore.build/empty-FlashScopeCore.plist (in target 'FlashScopeCore' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    builtin-infoPlistUtility /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeCore.build/empty-FlashScopeCore.plist -producttype com.apple.product-type.framework -expandbuildsettings -platform macosx -o /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCore.framework/Versions/A/Resources/Info.plist
+
+CopySwiftLibs /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest (in target 'FlashScopeCoreTests' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/MacOS/FlashScopeCoreTests --scan-folder /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/Frameworks --scan-folder /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/PlugIns --scan-folder /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/Library/SystemExtensions --scan-folder /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/Extensions --scan-folder /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCore.framework --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeCoreTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScope.app/Contents/Info.plist /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Resources/Info.plist (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    builtin-infoPlistUtility /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Resources/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScope.app/Contents/PkgInfo -expandbuildsettings -platform macosx -additionalcontentfile /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/assetcatalog_generated_info.plist -o /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScope.app/Contents/Info.plist
+
+ProcessInfoPlistFile /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/Info.plist /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeCoreTests.build/empty-FlashScopeCoreTests.plist (in target 'FlashScopeCoreTests' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    builtin-infoPlistUtility /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScopeCoreTests.build/empty-FlashScopeCoreTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -platform macosx -o /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/FlashScopeCoreTests.xctest/Contents/Info.plist
+
+SwiftCompile normal x86_64 Compiling\ AppServices.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppServices.swift (in target 'FlashScope' from project 'FlashScope')
+
+SwiftCompile normal x86_64 /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppServices.swift (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ FlashScope (in target 'FlashScope' from project 'FlashScope')
+EmitSwiftModule normal x86_64 (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:16:13: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+final class AppViewModel {
+            ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:17:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    let services: AppServices
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:18:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    let preferences: AppPreferences
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:20:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var drives: [PhysicalDrive] = []
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:21:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var selectedDriveID: String?
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:22:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var selectedVolume: Volume?
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:23:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var connection = USBConnection()
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:24:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var healthSignals: [HealthSignal] = []
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:25:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var filesystemCheck = FilesystemCheckResult(status: .notRun, summary: "Not run")
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:26:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var benchmarkResult: BenchmarkResult?
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:27:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var diagnosis: DiagnosisReport?
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:28:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var history: [TestSession] = []
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:29:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var benchmarkProgress: BenchmarkProgress?
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:30:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var isRefreshing = false
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:31:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var isBenchmarking = false
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:32:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var isVerifyingFilesystem = false
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:33:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var notice: AppNotice?
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:34:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var cleanupNotices: [CleanupRecoveryNotice] = []
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:36:37: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var started = false
+                                    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:37:37: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var discoveryTask: Task<Void, Never>?
+                                    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:38:37: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var benchmarkTask: Task<Void, Never>?
+                                    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:39:37: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var sleepObserver: NSObjectProtocol?
+                                    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:40:37: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private let logger = Logger(subsystem: "com.example.FlashScope", category: "app-state")
+                                    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:42:5: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    init(services: AppServices, preferences: AppPreferences) {
+    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:47:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var selectedDrive: PhysicalDrive? { drives.first(where: { $0.id == selectedDriveID }) }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:48:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var simulationMode: Bool { services.simulationMode }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:50:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func start() async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:69:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func refresh() async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:81:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func selectDrive(_ drive: PhysicalDrive) async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:94:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func suggestedBenchmarkConfiguration() -> BenchmarkConfiguration? {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:115:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func maximumSafeBenchmarkBytes(for volume: Volume) -> UInt64 {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:121:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func startHealthCheck(configuration: BenchmarkConfiguration) {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:171:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func cancelBenchmark(reason: String? = nil) {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:177:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func verifyFilesystemAfterConfirmation() async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:192:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func safeEjectSelectedDrive() async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:198:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func deleteHistory(_ session: TestSession) async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:207:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func deleteAllHistory() async {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:214:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    func currentSession() -> TestSession? {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:228:18: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private func applyDiscoveryUpdate(_ updated: [PhysicalDrive]) async {
+                 ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:252:18: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private func inspect(_ drive: PhysicalDrive) async {
+                 ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:275:18: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private func reloadHistory() async {
+                 ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:286:18: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private func recomputeDiagnosis() {
+                 ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:299:18: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private func persistCurrentSession() async throws {
+                 ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:309:18: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private func handleSystemSleep() {
+                 ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:318:25: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private static func isUrgentIOError(_ error: Error) -> Bool {
+                        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:16:13: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+final class AppViewModel {
+            ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:8:13: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+final class AppPreferences {
+            ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:36:37: error: external macro implementation type 'ObservationMacros.ObservationIgnoredMacro' could not be found for macro 'ObservationIgnored()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var started = false
+                                    ^
+Observation.ObservationIgnored:2:34: note: 'ObservationIgnored()' declared here
+@attached(accessor) public macro ObservationIgnored() = #externalMacro(module: "ObservationMacros", type: "ObservationIgnoredMacro")
+                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:37:37: error: external macro implementation type 'ObservationMacros.ObservationIgnoredMacro' could not be found for macro 'ObservationIgnored()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var discoveryTask: Task<Void, Never>?
+                                    ^
+Observation.ObservationIgnored:2:34: note: 'ObservationIgnored()' declared here
+@attached(accessor) public macro ObservationIgnored() = #externalMacro(module: "ObservationMacros", type: "ObservationIgnoredMacro")
+                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:38:37: error: external macro implementation type 'ObservationMacros.ObservationIgnoredMacro' could not be found for macro 'ObservationIgnored()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var benchmarkTask: Task<Void, Never>?
+                                    ^
+Observation.ObservationIgnored:2:34: note: 'ObservationIgnored()' declared here
+@attached(accessor) public macro ObservationIgnored() = #externalMacro(module: "ObservationMacros", type: "ObservationIgnoredMacro")
+                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:39:37: error: external macro implementation type 'ObservationMacros.ObservationIgnoredMacro' could not be found for macro 'ObservationIgnored()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private var sleepObserver: NSObjectProtocol?
+                                    ^
+Observation.ObservationIgnored:2:34: note: 'ObservationIgnored()' declared here
+@attached(accessor) public macro ObservationIgnored() = #externalMacro(module: "ObservationMacros", type: "ObservationIgnoredMacro")
+                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift:40:37: error: external macro implementation type 'ObservationMacros.ObservationIgnoredMacro' could not be found for macro 'ObservationIgnored()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @ObservationIgnored private let logger = Logger(subsystem: "com.example.FlashScope", category: "app-state")
+                                    ^
+Observation.ObservationIgnored:2:34: note: 'ObservationIgnored()' declared here
+@attached(accessor) public macro ObservationIgnored() = #externalMacro(module: "ObservationMacros", type: "ObservationIgnoredMacro")
+                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:6:13: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+final class HistoryRecord {
+            ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:7:29: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @Attribute(.unique) var sessionID: UUID
+                            ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:7:29: error: external macro implementation type 'SwiftDataMacros.AttributePropertyMacro' could not be found for macro 'Attribute(_:originalName:hashModifier:)'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    @Attribute(.unique) var sessionID: UUID
+                            ^
+SwiftData.Attribute:3:30: note: 'Attribute(_:originalName:hashModifier:)' declared here
+@attached(peer) public macro Attribute(_ options: Schema.Attribute.Option..., originalName: String? = nil, hashModifier: String? = nil) = #externalMacro(module: "SwiftDataMacros", type: "AttributePropertyMacro")
+                             ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:8:9: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var timestamp: Date
+        ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:9:9: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var driveIdentityHash: String
+        ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:10:9: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var payload: Data
+        ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:12:5: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    init(sessionID: UUID, timestamp: Date, driveIdentityHash: String, payload: Data) {
+    ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift:6:13: error: external macro implementation type 'SwiftDataMacros.PersistentModelMacro' could not be found for macro 'Model()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+final class HistoryRecord {
+            ^
+SwiftData.Model:3:373: note: 'Model()' declared here
+@attached(member, conformances: Observable, PersistentModel, Sendable, names: named(_$backingData), named(persistentBackingData), named(schemaMetadata), named(init), named(_$observationRegistrar), named(_SwiftDataNoType), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable, PersistentModel, Sendable) public macro Model() = #externalMacro(module: "SwiftDataMacros", type: "PersistentModelMacro")
+                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:8:13: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+final class AppPreferences {
+            ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:9:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    enum Appearance: String, CaseIterable, Identifiable {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:18:10: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    enum HistoryRetention: Int, CaseIterable, Identifiable {
+         ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:27:17: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    private let defaults: UserDefaults
+                ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:29:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var defaultPreset: BenchmarkPreset { didSet { defaults.set(defaultPreset.rawValue, forKey: "defaultPreset") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:30:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var sampleInterval: Double { didSet { defaults.set(sampleInterval, forKey: "sampleInterval") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:31:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var includeSmallFileTest: Bool { didSet { defaults.set(includeSmallFileTest, forKey: "includeSmallFileTest") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:32:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var historyRetention: HistoryRetention { didSet { defaults.set(historyRetention.rawValue, forKey: "historyRetention") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:33:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var redactIdentifiers: Bool { didSet { defaults.set(redactIdentifiers, forKey: "redactIdentifiers") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:34:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var automaticCleanupChecks: Bool { didSet { defaults.set(automaticCleanupChecks, forKey: "automaticCleanupChecks") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:35:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var throughputUnit: ThroughputUnit { didSet { defaults.set(throughputUnit.rawValue, forKey: "throughputUnit") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:36:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var advancedRawReadEnabled: Bool { didSet { defaults.set(false, forKey: "advancedRawReadEnabled") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:37:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    var appearance: Appearance { didSet { defaults.set(appearance.rawValue, forKey: "appearance") } }
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:39:9: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    let rawReadHelperAvailable = false
+        ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift:41:5: error: external macro implementation type 'ObservationMacros.ObservableMacro' could not be found for macro 'Observable()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+    init(defaults: UserDefaults = .standard) {
+    ^
+Observation.Observable:2:210: note: 'Observable()' declared here
+@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) public macro Observable() = #externalMacro(module: "ObservationMacros", type: "ObservableMacro")
+                                                                                                                                                                                                                 ^
+/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/SettingsView.swift:5:6: error: 'init(wrappedValue:)' is unavailable: The wrapped value must be an object that conforms to Observable
+    @Bindable var preferences: AppPreferences
+     ^~~~~~~~
+SwiftUI.Bindable.init:3:10: note: 'init(wrappedValue:)' has been explicitly marked unavailable here
+  public init(wrappedValue: Value)}
+         ^
+
+sandbox-exec: sandbox_apply: Operation not permitted
+sandbox-exec: sandbox_apply: Operation not permitted
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -emit-module -experimental-skip-non-inlinable-function-bodies-without-types /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppServices.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/AppViewModel.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/ContentView.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/App/FlashScopeApp.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Components/DiagnosticCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Components/HealthStatusBadge.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/ConnectionCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/DashboardView.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/FilesystemCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/FindingsCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/HistoryCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/OverviewCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/PerformanceCard.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Discovery/DiskArbitrationDriveDiscoveryService.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Discovery/DiskUtilityAdapter.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Features/HelpView.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Health/MacOSHealthSignalService.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/HealthCheck/HealthCheckSheet.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/PDFReportRenderer.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/ReportExportController.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/AppPreferences.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Settings/SettingsView.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Sidebar/SidebarView.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Support/RestrictedProcessRunner.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Support/SimulationServices.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/USB/IOKitUSBTopologyService.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Verification/DiskArbitrationMountController.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Verification/MacOSFilesystemVerificationService.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Volume/MacOSVolumeInformationService.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources/GeneratedAssetSymbols.swift -target x86_64-apple-macos14.0 -module-can-import-version DeveloperToolsSupport 23.40.26 23.40.26 -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftDataMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftDataMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-dependencies-1.json -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -I /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug -F /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 6 -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3 -enable-anonymous-context-mangled-names -file-compilation-dir /Users/faisalmahmud/Downloads/FlashScope-fixed3 -Xcc -ivfsstatcache -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/SDKStatCaches.noindex/macosx26.5-25F70-e082c4a02f00227109f4ed75e425c832.sdkstatcache -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-generated-files.hmap -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-own-target-headers.hmap -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope-35eb7d1e5bec2298583130c899748a02-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/FlashScope-project-headers.hmap -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Products/Debug/include -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources-normal/x86_64 -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources/x86_64 -Xcc -I/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/DerivedSources -no-auto-bridging-header-chaining -module-name FlashScope -frontend-parseable-output -disable-clang-spi -clang-target x86_64-apple-macos26.5 -target-sdk-version 26.5 -target-sdk-name macosx26.5 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -emit-module-doc-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope.swiftdoc -emit-module-source-info-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope.swiftsourceinfo -emit-objc-header-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-Swift.h -serialize-diagnostics-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary-emit-module.dia -emit-dependencies-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope-primary-emit-module.d -o /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope.swiftmodule -emit-abi-descriptor-path /Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Build/Intermediates.noindex/FlashScope.build/Debug/FlashScope.build/Objects-normal/x86_64/FlashScope.abi.json
+SwiftCompile normal x86_64 Compiling\ HealthCheckSheet.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/HealthCheck/HealthCheckSheet.swift (in target 'FlashScope' from project 'FlashScope')
+SwiftCompile normal x86_64 /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/HealthCheck/HealthCheckSheet.swift (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    
+
+sandbox-exec: sandbox_apply: Operation not permitted
+SwiftCompile normal x86_64 Compiling\ PDFReportRenderer.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/PDFReportRenderer.swift (in target 'FlashScope' from project 'FlashScope')
+SwiftCompile normal x86_64 /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Reporting/PDFReportRenderer.swift (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    
+
+SwiftCompile normal x86_64 Compiling\ SwiftDataHistoryRepository.swift /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift (in target 'FlashScope' from project 'FlashScope')
+sandbox-exec: sandbox_apply: Operation not permitted
+
+SwiftCompile normal x86_64 /Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Persistence/SwiftDataHistoryRepository.swift (in target 'FlashScope' from project 'FlashScope')
+    cd /Users/faisalmahmud/Downloads/FlashScope-fixed3
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling AppServices.swift (in target 'FlashScope' from project 'FlashScope')
+
+
+Test session results, code coverage, and logs:
+	/Users/faisalmahmud/Downloads/FlashScope-fixed3/.artifacts/DerivedData/Logs/Test/Test-FlashScope-2026.08.28_21-49-09-+0300.xcresult
+

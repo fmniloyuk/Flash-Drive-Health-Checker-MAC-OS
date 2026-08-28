@@ -1,0 +1,168 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/HealthCheck/HealthCheckSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Check",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Preflight and benchmark confirmation",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "1. Preflight",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "2. Benchmark size",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "3. What the test does",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "No existing file is overwritten",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Test — Write %@",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Creates one unique FlashScope-owned temporary benchmark workspace on the selected removable volume, writes the stated amount, flushes, reads it back, verifies SHA-256, then performs exact cleanup.",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Disabled by default because it creates many bounded filesystem operations. It reports files/s, ops/s, and throughput separately.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Include optional small-file workload",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unavailable on FAT32",
+        "location": {
+          "startingColumn": 98,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Custom",
+        "location": {
+          "startingColumn": 111,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "MiB",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "MiB",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "Flash wear: this test writes approximately %@ once. That is a small but real amount of flash wear.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Creates a unique app-owned temporary directory and never overwrites an existing path.",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "Writes %@ of non-zero pseudo-random data and includes durable flush time.",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reads the file back, measures sequential read throughput, and verifies SHA-256 integrity.",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "Deletes only the exact file, ownership marker, and directory after identity/symlink validation, then verifies cleanup.",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 132
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC2BF8ABF6CD396BA8CE8DD9 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3991BD7DFF47B7E9AB50A8 /* Availability.swift */; };
+		FC2D1D9CB86F52E57D35BDE7 /* BenchmarkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2918DC6A6EF441C2B5AD5890 /* BenchmarkEngine.swift */; };
+		501E80C42A080F360008AF40 /* DiagnosisEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99C4E65FDDE79FAA5AF3C9 /* DiagnosisEngine.swift */; };
+		527F09618A44860A98CDD6CA /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B0AF7B859E39D4067A50A /* DomainModels.swift */; };
+		94CB77485AF914073DEA78F3 /* DriveIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3419EC6612F805CD19B45 /* DriveIdentity.swift */; };
+		CCADD8A68B49D1EA54AAFCAD /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0415F588B022840A09C3E04 /* Fixtures.swift */; };
+		06612D196F1ADB4C6905C2E9 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF511F700F78C61F32F8EDA /* Formatting.swift */; };
+		FB83961B0F7D127C896B4631 /* OrphanCleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263623A90B1372BB3F255FF /* OrphanCleanup.swift */; };
+		15F1732C0EFBD6A97342AB8B /* ReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C842E6887121E3010D61CC /* ReportGenerator.swift */; };
+		2A4FD84DF308EF0F8271FA31 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CB563F845D8DAF05BF595 /* SHA256.swift */; };
+		AF53AD940EEB33B76BDF0344 /* SafeTemporaryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12F0150D7F5D0C70B2EBFE /* SafeTemporaryPath.swift */; };
+		E6E8D00C307ED9A25284930E /* ServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56622DF8DCBB521A11605868 /* ServiceProtocols.swift */; };
+		903A0758837C61DB288106FC /* USBDescriptorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183440D5B5F04257FD9780AF /* USBDescriptorParser.swift */; };
+		BB0805F2821372606CC68E00 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E414D95745292C918D7A2FF /* AppServices.swift */; };
+		27C352248AAC84A239CACA23 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87888E839983B18EA42BE09 /* AppViewModel.swift */; };
+		FF1344821AFEAAC074CEE405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFDEA48D47E39A8BBC26624 /* ContentView.swift */; };
+		3657D17373B043C6DED8FA4A /* FlashScopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB37963786A7C2922D26EB /* FlashScopeApp.swift */; };
+		BE7A3E3A6D4249BBC748C860 /* DiagnosticCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10759E6DE6EA5BADFE7776B /* DiagnosticCard.swift */; };
+		E42108398B05ACB83BDC540C /* HealthStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1868248FF947120098681E /* HealthStatusBadge.swift */; };
+		B5AADA9B1F1A22738CCE2D33 /* ConnectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0D87364F802A79FC586DB /* ConnectionCard.swift */; };
+		50DE7BA58D07EA3851E0CF4E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187887D86429A9332A3E1A97 /* DashboardView.swift */; };
+		0E7359491B668E893FDE6352 /* FilesystemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501C841F831A6687F23AB97 /* FilesystemCard.swift */; };
+		39607CB0165E4C9991016923 /* FindingsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9065AA4C3C4C5A5AA32444 /* FindingsCard.swift */; };
+		0A5A5EAD1774B3272C41363F /* HistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFBA4BE2032CAEE4959E46 /* HistoryCard.swift */; };
+		B05BC746C21DE2BE2F9A4D55 /* OverviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E36EB17156C34052BA9453 /* OverviewCard.swift */; };
+		C83B9605A47A894BCF0F1BA5 /* PerformanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEBCE2868A57333E22A57C /* PerformanceCard.swift */; };
+		18F7FD7526AF4B73C10C5C15 /* DiskArbitrationDriveDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D7FDBBA4EF47D999A4321C /* DiskArbitrationDriveDiscoveryService.swift */; };
+		43E737C5A6F49897FA77C4E5 /* DiskUtilityAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5D99F3766C5A7F5CD9E8B /* DiskUtilityAdapter.swift */; };
+		985D2284EA4303649269122E /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154B206D885EE148EF6FC9A /* HelpView.swift */; };
+		31A9BCD96950ECE55F491864 /* MacOSHealthSignalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0CB040E1637F304CFE5A8 /* MacOSHealthSignalService.swift */; };
+		AC38CEC78A1C79534F3D5815 /* HealthCheckSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680BD1587597DA9AD5CA299C /* HealthCheckSheet.swift */; };
+		17912DFC920EDFCE3D242A3B /* SwiftDataHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942D0A65E4F6B81883B19EB /* SwiftDataHistoryRepository.swift */; };
+		0A49FB6478A830D51033D6BA /* PDFReportRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7BFD1D6DD742A61FB2DA8 /* PDFReportRenderer.swift */; };
+		397880BB18BE69F1CD2CDBD8 /* ReportExportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63187ADBA8132CE0898F8B /* ReportExportController.swift */; };
+		EEA4ECA53FF683DFA0B7621F /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444DEF83BD260D9295685EC /* AppPreferences.swift */; };
+		21540560B2D3314EB707008E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACCF11BFF2C5D580BB78CA /* SettingsView.swift */; };
+		23B8DEBB3F10649DE27E0012 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C640462C27025885C33123 /* SidebarView.swift */; };
+		A0336A30A4F82CEA00603431 /* RestrictedProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C50CE9C8CA22283B529D4B /* RestrictedProcessRunner.swift */; };
+		FDFD25F64C653273CB9B2937 /* SimulationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B3188F1018630CE66BBB8 /* SimulationServices.swift */; };
+		054F6EF172A5E7A453C6FA58 /* IOKitUSBTopologyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3395629BD7653D3E82D04B /* IOKitUSBTopologyService.swift */; };
+		317476AF5BE81F7A2582A088 /* DiskArbitrationMountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2ACE153CB55B699FD618E /* DiskArbitrationMountController.swift */; };
+		B354CC3A596E7590476C73E8 /* MacOSFilesystemVerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C302026120D983E016798 /* MacOSFilesystemVerificationService.swift */; };
+		0E41BB9F521646E26B70D7FB /* MacOSVolumeInformationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C8AD4596D017FE82BA6E5 /* MacOSVolumeInformationService.swift */; };
+		D8A70EB8099C1D33799CBB69 /* FlashScopeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42112EA7BAAAE869B7B7BE59 /* FlashScopeCoreTests.swift */; };
+		57559E1F3069113B112627B2 /* FlashScopeIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FDAB3E01370A6ED5B9BBA /* FlashScopeIntegrationTests.swift */; };
+		8F9FC521D651F882FA7DD9B6 /* FlashScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793688CCFCD79B6C84A3672 /* FlashScopeUITests.swift */; };
+		A0ADEE088958E2AB2D38C4B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7391C11B9438134349B6DA /* Assets.xcassets */; };
+		618D43392F4B81CC0943B378 /* FlashScopeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */; };
+		0C017F73C05304BE35A283DF /* FlashScopeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */; };
+		230FEA984546626AB155064E /* FlashScopeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */; };
+		E8B4F2C4A5D74B188D772001 /* FlashScopeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8B4F2C4A5D74B188D772002 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8B4F2C4A5D74B188D772001 /* FlashScopeCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXContainerItemProxy section */
+		BD72E8527B0E223C4B9702D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11EED822EBD4996DAF631B0;
+			remoteInfo = FlashScopeCore;
+		};
+		1C85540BB882687B59EA229D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11EED822EBD4996DAF631B0;
+			remoteInfo = FlashScopeCore;
+		};
+		594A8C3967199BA819A99CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C7B681C8D62CBAC94D51C0;
+			remoteInfo = FlashScope;
+		};
+		A72498B9E523CE95AE011464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11EED822EBD4996DAF631B0;
+			remoteInfo = FlashScopeCore;
+		};
+		93156A5C0CBF09C0419FCDAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C7B681C8D62CBAC94D51C0;
+			remoteInfo = FlashScope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD3991BD7DFF47B7E9AB50A8 /* Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/Availability.swift"; sourceTree = SOURCE_ROOT; };
+		2918DC6A6EF441C2B5AD5890 /* BenchmarkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/BenchmarkEngine.swift"; sourceTree = SOURCE_ROOT; };
+		AD99C4E65FDDE79FAA5AF3C9 /* DiagnosisEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/DiagnosisEngine.swift"; sourceTree = SOURCE_ROOT; };
+		6B5B0AF7B859E39D4067A50A /* DomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/DomainModels.swift"; sourceTree = SOURCE_ROOT; };
+		AEE3419EC6612F805CD19B45 /* DriveIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/DriveIdentity.swift"; sourceTree = SOURCE_ROOT; };
+		F0415F588B022840A09C3E04 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/Fixtures.swift"; sourceTree = SOURCE_ROOT; };
+		BEF511F700F78C61F32F8EDA /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/Formatting.swift"; sourceTree = SOURCE_ROOT; };
+		5263623A90B1372BB3F255FF /* OrphanCleanup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/OrphanCleanup.swift"; sourceTree = SOURCE_ROOT; };
+		08C842E6887121E3010D61CC /* ReportGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/ReportGenerator.swift"; sourceTree = SOURCE_ROOT; };
+		100CB563F845D8DAF05BF595 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/SHA256.swift"; sourceTree = SOURCE_ROOT; };
+		4E12F0150D7F5D0C70B2EBFE /* SafeTemporaryPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/SafeTemporaryPath.swift"; sourceTree = SOURCE_ROOT; };
+		56622DF8DCBB521A11605868 /* ServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/ServiceProtocols.swift"; sourceTree = SOURCE_ROOT; };
+		183440D5B5F04257FD9780AF /* USBDescriptorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/FlashScopeCore/USBDescriptorParser.swift"; sourceTree = SOURCE_ROOT; };
+		1E414D95745292C918D7A2FF /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/App/AppServices.swift"; sourceTree = SOURCE_ROOT; };
+		E87888E839983B18EA42BE09 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/App/AppViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		FEFDEA48D47E39A8BBC26624 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/App/ContentView.swift"; sourceTree = SOURCE_ROOT; };
+		87AB37963786A7C2922D26EB /* FlashScopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/App/FlashScopeApp.swift"; sourceTree = SOURCE_ROOT; };
+		C10759E6DE6EA5BADFE7776B /* DiagnosticCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Components/DiagnosticCard.swift"; sourceTree = SOURCE_ROOT; };
+		7E1868248FF947120098681E /* HealthStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Components/HealthStatusBadge.swift"; sourceTree = SOURCE_ROOT; };
+		47B0D87364F802A79FC586DB /* ConnectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/ConnectionCard.swift"; sourceTree = SOURCE_ROOT; };
+		187887D86429A9332A3E1A97 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/DashboardView.swift"; sourceTree = SOURCE_ROOT; };
+		3501C841F831A6687F23AB97 /* FilesystemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/FilesystemCard.swift"; sourceTree = SOURCE_ROOT; };
+		8E9065AA4C3C4C5A5AA32444 /* FindingsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/FindingsCard.swift"; sourceTree = SOURCE_ROOT; };
+		8BEFBA4BE2032CAEE4959E46 /* HistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/HistoryCard.swift"; sourceTree = SOURCE_ROOT; };
+		D3E36EB17156C34052BA9453 /* OverviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/OverviewCard.swift"; sourceTree = SOURCE_ROOT; };
+		3AEEBCE2868A57333E22A57C /* PerformanceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Dashboard/PerformanceCard.swift"; sourceTree = SOURCE_ROOT; };
+		A9D7FDBBA4EF47D999A4321C /* DiskArbitrationDriveDiscoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Discovery/DiskArbitrationDriveDiscoveryService.swift"; sourceTree = SOURCE_ROOT; };
+		C0F5D99F3766C5A7F5CD9E8B /* DiskUtilityAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Discovery/DiskUtilityAdapter.swift"; sourceTree = SOURCE_ROOT; };
+		D154B206D885EE148EF6FC9A /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Features/HelpView.swift"; sourceTree = SOURCE_ROOT; };
+		5FD0CB040E1637F304CFE5A8 /* MacOSHealthSignalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Health/MacOSHealthSignalService.swift"; sourceTree = SOURCE_ROOT; };
+		680BD1587597DA9AD5CA299C /* HealthCheckSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/HealthCheck/HealthCheckSheet.swift"; sourceTree = SOURCE_ROOT; };
+		8942D0A65E4F6B81883B19EB /* SwiftDataHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Persistence/SwiftDataHistoryRepository.swift"; sourceTree = SOURCE_ROOT; };
+		03B7BFD1D6DD742A61FB2DA8 /* PDFReportRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Reporting/PDFReportRenderer.swift"; sourceTree = SOURCE_ROOT; };
+		EC63187ADBA8132CE0898F8B /* ReportExportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Reporting/ReportExportController.swift"; sourceTree = SOURCE_ROOT; };
+		4444DEF83BD260D9295685EC /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Settings/AppPreferences.swift"; sourceTree = SOURCE_ROOT; };
+		1EACCF11BFF2C5D580BB78CA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Settings/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
+		B1C640462C27025885C33123 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Sidebar/SidebarView.swift"; sourceTree = SOURCE_ROOT; };
+		E6C50CE9C8CA22283B529D4B /* RestrictedProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Support/RestrictedProcessRunner.swift"; sourceTree = SOURCE_ROOT; };
+		2D2B3188F1018630CE66BBB8 /* SimulationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Support/SimulationServices.swift"; sourceTree = SOURCE_ROOT; };
+		4A3395629BD7653D3E82D04B /* IOKitUSBTopologyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/USB/IOKitUSBTopologyService.swift"; sourceTree = SOURCE_ROOT; };
+		ABE2ACE153CB55B699FD618E /* DiskArbitrationMountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Verification/DiskArbitrationMountController.swift"; sourceTree = SOURCE_ROOT; };
+		B60C302026120D983E016798 /* MacOSFilesystemVerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Verification/MacOSFilesystemVerificationService.swift"; sourceTree = SOURCE_ROOT; };
+		B74C8AD4596D017FE82BA6E5 /* MacOSVolumeInformationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScope/Volume/MacOSVolumeInformationService.swift"; sourceTree = SOURCE_ROOT; };
+		42112EA7BAAAE869B7B7BE59 /* FlashScopeCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests/FlashScopeCoreTests/FlashScopeCoreTests.swift"; sourceTree = SOURCE_ROOT; };
+		577FDAB3E01370A6ED5B9BBA /* FlashScopeIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScopeIntegrationTests/FlashScopeIntegrationTests.swift"; sourceTree = SOURCE_ROOT; };
+		6793688CCFCD79B6C84A3672 /* FlashScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashScopeUITests/FlashScopeUITests.swift"; sourceTree = SOURCE_ROOT; };
+		6E7391C11B9438134349B6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "FlashScope/Resources/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		245E6D9DB0563EA217AB60F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashScope/Resources/Info.plist"; sourceTree = SOURCE_ROOT; };
+		59941D0F88A44B5D73D29E21 /* FlashScope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FlashScope/Resources/FlashScope.entitlements"; sourceTree = SOURCE_ROOT; };
+		797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlashScopeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CDB6E5D160E013280D3C68 /* FlashScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		782395792B604A503D86C9E7 /* FlashScopeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashScopeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E689076FA58C89DE883C0855 /* FlashScopeIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashScopeIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6876384C1F14AB301558A48A /* FlashScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ECCA0A66973F9E1FCE68BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9773D84493B3D713DB9AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618D43392F4B81CC0943B378 /* FlashScopeCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A278AB910FF23269E15F66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C017F73C05304BE35A283DF /* FlashScopeCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FA93D4A3F85307D749A396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230FEA984546626AB155064E /* FlashScopeCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B71931A8FBBD0859FC4A8D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCF10F76EBF2A74473E9DC4 = {
+			isa = PBXGroup;
+			children = (
+				FC8F5A85394B0D5FF7E93AFA /* FlashScopeCore */,
+				CF8D0BD4B75E8C2C174692A5 /* FlashScope */,
+				CEDF942FF3B0BCA7DF754049 /* FlashScopeCoreTests */,
+				4C5A333338309DF82A80BF87 /* FlashScopeIntegrationTests */,
+				9D1F2B3F17BB8AA6FB663F5C /* FlashScopeUITests */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8F5A85394B0D5FF7E93AFA /* FlashScopeCore */ = {
+			isa = PBXGroup;
+			children = (
+				FD3991BD7DFF47B7E9AB50A8 /* Availability.swift */,
+				2918DC6A6EF441C2B5AD5890 /* BenchmarkEngine.swift */,
+				AD99C4E65FDDE79FAA5AF3C9 /* DiagnosisEngine.swift */,
+				6B5B0AF7B859E39D4067A50A /* DomainModels.swift */,
+				AEE3419EC6612F805CD19B45 /* DriveIdentity.swift */,
+				F0415F588B022840A09C3E04 /* Fixtures.swift */,
+				BEF511F700F78C61F32F8EDA /* Formatting.swift */,
+				5263623A90B1372BB3F255FF /* OrphanCleanup.swift */,
+				08C842E6887121E3010D61CC /* ReportGenerator.swift */,
+				100CB563F845D8DAF05BF595 /* SHA256.swift */,
+				4E12F0150D7F5D0C70B2EBFE /* SafeTemporaryPath.swift */,
+				56622DF8DCBB521A11605868 /* ServiceProtocols.swift */,
+				183440D5B5F04257FD9780AF /* USBDescriptorParser.swift */,
+			);
+			name = FlashScopeCore;
+			sourceTree = "<group>";
+		};
+		CF8D0BD4B75E8C2C174692A5 /* FlashScope */ = {
+			isa = PBXGroup;
+			children = (
+				1E414D95745292C918D7A2FF /* AppServices.swift */,
+				E87888E839983B18EA42BE09 /* AppViewModel.swift */,
+				FEFDEA48D47E39A8BBC26624 /* ContentView.swift */,
+				87AB37963786A7C2922D26EB /* FlashScopeApp.swift */,
+				C10759E6DE6EA5BADFE7776B /* DiagnosticCard.swift */,
+				7E1868248FF947120098681E /* HealthStatusBadge.swift */,
+				47B0D87364F802A79FC586DB /* ConnectionCard.swift */,
+				187887D86429A9332A3E1A97 /* DashboardView.swift */,
+				3501C841F831A6687F23AB97 /* FilesystemCard.swift */,
+				8E9065AA4C3C4C5A5AA32444 /* FindingsCard.swift */,
+				8BEFBA4BE2032CAEE4959E46 /* HistoryCard.swift */,
+				D3E36EB17156C34052BA9453 /* OverviewCard.swift */,
+				3AEEBCE2868A57333E22A57C /* PerformanceCard.swift */,
+				A9D7FDBBA4EF47D999A4321C /* DiskArbitrationDriveDiscoveryService.swift */,
+				C0F5D99F3766C5A7F5CD9E8B /* DiskUtilityAdapter.swift */,
+				D154B206D885EE148EF6FC9A /* HelpView.swift */,
+				5FD0CB040E1637F304CFE5A8 /* MacOSHealthSignalService.swift */,
+				680BD1587597DA9AD5CA299C /* HealthCheckSheet.swift */,
+				8942D0A65E4F6B81883B19EB /* SwiftDataHistoryRepository.swift */,
+				03B7BFD1D6DD742A61FB2DA8 /* PDFReportRenderer.swift */,
+				EC63187ADBA8132CE0898F8B /* ReportExportController.swift */,
+				4444DEF83BD260D9295685EC /* AppPreferences.swift */,
+				1EACCF11BFF2C5D580BB78CA /* SettingsView.swift */,
+				B1C640462C27025885C33123 /* SidebarView.swift */,
+				E6C50CE9C8CA22283B529D4B /* RestrictedProcessRunner.swift */,
+				2D2B3188F1018630CE66BBB8 /* SimulationServices.swift */,
+				4A3395629BD7653D3E82D04B /* IOKitUSBTopologyService.swift */,
+				ABE2ACE153CB55B699FD618E /* DiskArbitrationMountController.swift */,
+				B60C302026120D983E016798 /* MacOSFilesystemVerificationService.swift */,
+				B74C8AD4596D017FE82BA6E5 /* MacOSVolumeInformationService.swift */,
+				22D02A9EFAC9B3FBBAEBE062 /* Resources */,
+			);
+			name = FlashScope;
+			sourceTree = "<group>";
+		};
+		22D02A9EFAC9B3FBBAEBE062 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E7391C11B9438134349B6DA /* Assets.xcassets */,
+				245E6D9DB0563EA217AB60F5 /* Info.plist */,
+				59941D0F88A44B5D73D29E21 /* FlashScope.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CEDF942FF3B0BCA7DF754049 /* FlashScopeCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				42112EA7BAAAE869B7B7BE59 /* FlashScopeCoreTests.swift */,
+			);
+			name = FlashScopeCoreTests;
+			sourceTree = "<group>";
+		};
+		4C5A333338309DF82A80BF87 /* FlashScopeIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				577FDAB3E01370A6ED5B9BBA /* FlashScopeIntegrationTests.swift */,
+			);
+			name = FlashScopeIntegrationTests;
+			sourceTree = "<group>";
+		};
+		9D1F2B3F17BB8AA6FB663F5C /* FlashScopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6793688CCFCD79B6C84A3672 /* FlashScopeUITests.swift */,
+			);
+			name = FlashScopeUITests;
+			sourceTree = "<group>";
+		};
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6CDB6E5D160E013280D3C68 /* FlashScope.app */,
+				797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */,
+				782395792B604A503D86C9E7 /* FlashScopeCoreTests.xctest */,
+				E689076FA58C89DE883C0855 /* FlashScopeIntegrationTests.xctest */,
+				6876384C1F14AB301558A48A /* FlashScopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F11EED822EBD4996DAF631B0 /* FlashScopeCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D41AA4E1013195B2CE8995D /* Build configuration list for PBXNativeTarget "FlashScopeCore" */;
+			buildPhases = (
+				F94C513333E48157451A105F /* Sources */,
+				1ECCA0A66973F9E1FCE68BCF /* Frameworks */,
+				5E66A6024B93F814F8CE9194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+
+			);
+			name = FlashScopeCore;
+			productName = FlashScopeCore;
+			productReference = 797E92F9BC7CD81F430FA27D /* FlashScopeCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		29C7B681C8D62CBAC94D51C0 /* FlashScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8B995C0985FBB9D2A49B8F /* Build configuration list for PBXNativeTarget "FlashScope" */;
+			buildPhases = (
+				3BE5C704148406E58FE0AB5F /* Sources */,
+				5B9773D84493B3D713DB9AC0 /* Frameworks */,
+				E8B4F2C4A5D74B188D772002 /* Embed Frameworks */,
+				B681E6ECC54B86FE775FEC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C34F9A198EEE6F13E7E09B1E /* PBXTargetDependency */,
+			);
+			name = FlashScope;
+			productName = FlashScope;
+			productReference = B6CDB6E5D160E013280D3C68 /* FlashScope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		744203E57A60333548F2AFC1 /* FlashScopeCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B8DAAC00A8991B2749B8DA5 /* Build configuration list for PBXNativeTarget "FlashScopeCoreTests" */;
+			buildPhases = (
+				4CAF9D3D38B5B939342C7FF7 /* Sources */,
+				A4A278AB910FF23269E15F66 /* Frameworks */,
+				E01BD5DC60ED8EF476FC92F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C307EB81DA3CAB0283A4A6 /* PBXTargetDependency */,
+			);
+			name = FlashScopeCoreTests;
+			productName = FlashScopeCoreTests;
+			productReference = 782395792B604A503D86C9E7 /* FlashScopeCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D18FE61B77CA8526B698B399 /* FlashScopeIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8623F8CCB79147FD07DF59 /* Build configuration list for PBXNativeTarget "FlashScopeIntegrationTests" */;
+			buildPhases = (
+				80BB813B64130963BA296E4A /* Sources */,
+				E8FA93D4A3F85307D749A396 /* Frameworks */,
+				7274E62412B965B8082D77F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EFF5DC6893718ABBC0F2D7C /* PBXTargetDependency */,
+				ED00E0DC3904AE08DFD66BAF /* PBXTargetDependency */,
+			);
+			name = FlashScopeIntegrationTests;
+			productName = FlashScopeIntegrationTests;
+			productReference = E689076FA58C89DE883C0855 /* FlashScopeIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4125057379AE12C52671CDDE /* FlashScopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01FBC8D2C27B7AB18970140 /* Build configuration list for PBXNativeTarget "FlashScopeUITests" */;
+			buildPhases = (
+				D111DCEF63D89DE869F8E571 /* Sources */,
+				8B71931A8FBBD0859FC4A8D7 /* Frameworks */,
+				33418A727957FC9CC8B4245A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A0D369120EEE0F3F751786 /* PBXTargetDependency */,
+			);
+			name = FlashScopeUITests;
+			productName = FlashScopeUITests;
+			productReference = 6876384C1F14AB301558A48A /* FlashScopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					29C7B681C8D62CBAC94D51C0 = { CreatedOnToolsVersion = 16.0; };
+					F11EED822EBD4996DAF631B0 = { CreatedOnToolsVersion = 16.0; };
+					744203E57A60333548F2AFC1 = { CreatedOnToolsVersion = 16.0; };
+					D18FE61B77CA8526B698B399 = { CreatedOnToolsVersion = 16.0; TestTargetID = 29C7B681C8D62CBAC94D51C0; };
+					4125057379AE12C52671CDDE = { CreatedOnToolsVersion = 16.0; TestTargetID = 29C7B681C8D62CBAC94D51C0; };
+				};
+			};
+			buildConfigurationList = 12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "FlashScope" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			productRefGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C7B681C8D62CBAC94D51C0 /* FlashScope */,
+				F11EED822EBD4996DAF631B0 /* FlashScopeCore */,
+				744203E57A60333548F2AFC1 /* FlashScopeCoreTests */,
+				D18FE61B77CA8526B698B399 /* FlashScopeIntegrationTests */,
+				4125057379AE12C52671CDDE /* FlashScopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E66A6024B93F814F8CE9194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B681E6ECC54B86FE775FEC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0ADEE088958E2AB2D38C4B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01BD5DC60ED8EF476FC92F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7274E62412B965B8082D77F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33418A727957FC9CC8B4245A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F94C513333E48157451A105F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2BF8ABF6CD396BA8CE8DD9 /* Availability.swift in Sources */,
+				FC2D1D9CB86F52E57D35BDE7 /* BenchmarkEngine.swift in Sources */,
+				501E80C42A080F360008AF40 /* DiagnosisEngine.swift in Sources */,
+				527F09618A44860A98CDD6CA /* DomainModels.swift in Sources */,
+				94CB77485AF914073DEA78F3 /* DriveIdentity.swift in Sources */,
+				CCADD8A68B49D1EA54AAFCAD /* Fixtures.swift in Sources */,
+				06612D196F1ADB4C6905C2E9 /* Formatting.swift in Sources */,
+				FB83961B0F7D127C896B4631 /* OrphanCleanup.swift in Sources */,
+				15F1732C0EFBD6A97342AB8B /* ReportGenerator.swift in Sources */,
+				2A4FD84DF308EF0F8271FA31 /* SHA256.swift in Sources */,
+				AF53AD940EEB33B76BDF0344 /* SafeTemporaryPath.swift in Sources */,
+				E6E8D00C307ED9A25284930E /* ServiceProtocols.swift in Sources */,
+				903A0758837C61DB288106FC /* USBDescriptorParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE5C704148406E58FE0AB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0805F2821372606CC68E00 /* AppServices.swift in Sources */,
+				27C352248AAC84A239CACA23 /* AppViewModel.swift in Sources */,
+				FF1344821AFEAAC074CEE405 /* ContentView.swift in Sources */,
+				3657D17373B043C6DED8FA4A /* FlashScopeApp.swift in Sources */,
+				BE7A3E3A6D4249BBC748C860 /* DiagnosticCard.swift in Sources */,
+				E42108398B05ACB83BDC540C /* HealthStatusBadge.swift in Sources */,
+				B5AADA9B1F1A22738CCE2D33 /* ConnectionCard.swift in Sources */,
+				50DE7BA58D07EA3851E0CF4E /* DashboardView.swift in Sources */,
+				0E7359491B668E893FDE6352 /* FilesystemCard.swift in Sources */,
+				39607CB0165E4C9991016923 /* FindingsCard.swift in Sources */,
+				0A5A5EAD1774B3272C41363F /* HistoryCard.swift in Sources */,
+				B05BC746C21DE2BE2F9A4D55 /* OverviewCard.swift in Sources */,
+				C83B9605A47A894BCF0F1BA5 /* PerformanceCard.swift in Sources */,
+				18F7FD7526AF4B73C10C5C15 /* DiskArbitrationDriveDiscoveryService.swift in Sources */,
+				43E737C5A6F49897FA77C4E5 /* DiskUtilityAdapter.swift in Sources */,
+				985D2284EA4303649269122E /* HelpView.swift in Sources */,
+				31A9BCD96950ECE55F491864 /* MacOSHealthSignalService.swift in Sources */,
+				AC38CEC78A1C79534F3D5815 /* HealthCheckSheet.swift in Sources */,
+				17912DFC920EDFCE3D242A3B /* SwiftDataHistoryRepository.swift in Sources */,
+				0A49FB6478A830D51033D6BA /* PDFReportRenderer.swift in Sources */,
+				397880BB18BE69F1CD2CDBD8 /* ReportExportController.swift in Sources */,
+				EEA4ECA53FF683DFA0B7621F /* AppPreferences.swift in Sources */,
+				21540560B2D3314EB707008E /* SettingsView.swift in Sources */,
+				23B8DEBB3F10649DE27E0012 /* SidebarView.swift in Sources */,
+				A0336A30A4F82CEA00603431 /* RestrictedProcessRunner.swift in Sources */,
+				FDFD25F64C653273CB9B2937 /* SimulationServices.swift in Sources */,
+				054F6EF172A5E7A453C6FA58 /* IOKitUSBTopologyService.swift in Sources */,
+				317476AF5BE81F7A2582A088 /* DiskArbitrationMountController.swift in Sources */,
+				B354CC3A596E7590476C73E8 /* MacOSFilesystemVerificationService.swift in Sources */,
+				0E41BB9F521646E26B70D7FB /* MacOSVolumeInformationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAF9D3D38B5B939342C7FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A70EB8099C1D33799CBB69 /* FlashScopeCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80BB813B64130963BA296E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57559E1F3069113B112627B2 /* FlashScopeIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D111DCEF63D89DE869F8E571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9FC521D651F882FA7DD9B6 /* FlashScopeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C34F9A198EEE6F13E7E09B1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11EED822EBD4996DAF631B0 /* FlashScopeCore */;
+			targetProxy = BD72E8527B0E223C4B9702D1 /* PBXContainerItemProxy */;
+		};
+		35C307EB81DA3CAB0283A4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11EED822EBD4996DAF631B0 /* FlashScopeCore */;
+			targetProxy = 1C85540BB882687B59EA229D /* PBXContainerItemProxy */;
+		};
+		3EFF5DC6893718ABBC0F2D7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C7B681C8D62CBAC94D51C0 /* FlashScope */;
+			targetProxy = 594A8C3967199BA819A99CAD /* PBXContainerItemProxy */;
+		};
+		ED00E0DC3904AE08DFD66BAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11EED822EBD4996DAF631B0 /* FlashScopeCore */;
+			targetProxy = A72498B9E523CE95AE011464 /* PBXContainerItemProxy */;
+		};
+		B1A0D369120EEE0F3F751786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C7B681C8D62CBAC94D51C0 /* FlashScope */;
+			targetProxy = 93156A5C0CBF09C0419FCDAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		877A6BA951A2EA0025A2ABE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+			};
+			name = Debug;
+		};
+		959134B361DD7E21ADEA3164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6349A8001BEE4288DFA6FB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlashScope/Resources/FlashScope.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlashScope/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				ENABLE_TESTABILITY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CE910B0225FE5D337C28791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlashScope/Resources/FlashScope.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlashScope/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1E924673EA73CD3A62CD2D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				ENABLE_TESTABILITY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5A806E232FB0EF5A4ADEE3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DBB8F6CE29C08C439D621C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				ENABLE_TESTABILITY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A6A0B4AC3E2ADA450201D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B1A288221F5145B7836BBAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashScope.app/Contents/MacOS/FlashScope";
+				ENABLE_TESTABILITY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66425C34FF4A799C5BFEC2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashScope.app/Contents/MacOS/FlashScope";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7C5397086503EE872EF7F1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = FlashScope;
+				ENABLE_TESTABILITY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AA5AE8FFA8724FE8A26781E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FlashScopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = FlashScope;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "FlashScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877A6BA951A2EA0025A2ABE8 /* Debug */,
+				959134B361DD7E21ADEA3164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8B995C0985FBB9D2A49B8F /* Build configuration list for PBXNativeTarget "FlashScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6349A8001BEE4288DFA6FB21 /* Debug */,
+				5CE910B0225FE5D337C28791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D41AA4E1013195B2CE8995D /* Build configuration list for PBXNativeTarget "FlashScopeCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E924673EA73CD3A62CD2D33 /* Debug */,
+				A5A806E232FB0EF5A4ADEE3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B8DAAC00A8991B2749B8DA5 /* Build configuration list for PBXNativeTarget "FlashScopeCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB8F6CE29C08C439D621C78 /* Debug */,
+				8A6A0B4AC3E2ADA450201D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8623F8CCB79147FD07DF59 /* Build configuration list for PBXNativeTarget "FlashScopeIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A288221F5145B7836BBAC8 /* Debug */,
+				66425C34FF4A799C5BFEC2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01FBC8D2C27B7AB18970140 /* Build configuration list for PBXNativeTarget "FlashScopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5397086503EE872EF7F1F6 /* Debug */,
+				7AA5AE8FFA8724FE8A26781E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}

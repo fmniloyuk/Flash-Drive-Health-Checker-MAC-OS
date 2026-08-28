@@ -1,0 +1,24 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Components/HealthStatusBadge.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Health status: %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Severity: %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 45
+        }
+      }
+    ]
+  },
+  "version": 1
+}

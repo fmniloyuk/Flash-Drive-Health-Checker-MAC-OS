@@ -1,0 +1,24 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/DashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "FlashScope is collecting safe read-only information about the selected removable drive.",
+        "location": {
+          "startingColumn": 126,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Inspecting drive…",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 39
+        }
+      }
+    ]
+  },
+  "version": 1
+}

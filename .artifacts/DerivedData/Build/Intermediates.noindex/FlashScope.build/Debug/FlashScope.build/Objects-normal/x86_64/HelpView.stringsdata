@@ -1,0 +1,24 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Features/HelpView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "FlashScope Help",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 9
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 11
+        }
+      }
+    ]
+  },
+  "version": 1
+}

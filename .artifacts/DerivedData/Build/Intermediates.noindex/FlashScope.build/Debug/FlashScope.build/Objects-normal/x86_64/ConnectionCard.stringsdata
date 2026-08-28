@@ -1,0 +1,16 @@
+{
+  "source": "/Users/faisalmahmud/Downloads/FlashScope-fixed3/FlashScope/Dashboard/ConnectionCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "USB topology",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 27
+        }
+      }
+    ]
+  },
+  "version": 1
+}

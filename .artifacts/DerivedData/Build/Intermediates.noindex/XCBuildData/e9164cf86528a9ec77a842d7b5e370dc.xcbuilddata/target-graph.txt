@@ -1,0 +1,11 @@
+Target dependency graph (5 targets)
+Target 'FlashScopeUITests' in project 'FlashScope'
+➜ Explicit dependency on target 'FlashScope' in project 'FlashScope'
+Target 'FlashScopeIntegrationTests' in project 'FlashScope'
+➜ Explicit dependency on target 'FlashScope' in project 'FlashScope'
+➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+Target 'FlashScopeCoreTests' in project 'FlashScope'
+➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+Target 'FlashScope' in project 'FlashScope'
+➜ Explicit dependency on target 'FlashScopeCore' in project 'FlashScope'
+Target 'FlashScopeCore' in project 'FlashScope' (no dependencies)
