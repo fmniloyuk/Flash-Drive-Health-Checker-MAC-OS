@@ -1,0 +1,99 @@
+name: macOS CI & Release
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: flashscope-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and test FlashScope
+    runs-on: macos-15
+    timeout-minutes: 30
+
+    env:
+      BUNDLE_ID: com.example.FlashScope
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show macOS and Xcode versions
+        run: |
+          sw_vers
+          xcodebuild -version
+          swift --version
+
+      - name: Make build script executable
+        run: chmod +x Scripts/build_dmg.sh
+
+      - name: Run Xcode tests
+        run: |
+          xcodebuild \
+            -project FlashScope.xcodeproj \
+            -scheme FlashScope \
+            -configuration Debug \
+            -destination 'platform=macOS' \
+            -derivedDataPath .artifacts/DerivedData \
+            PRODUCT_BUNDLE_IDENTIFIER="$BUNDLE_ID" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            test
+
+      - name: Build release DMG
+        run: |
+          BUNDLE_ID="$BUNDLE_ID" \
+          ./Scripts/build_dmg.sh --skip-tests --no-clean
+
+      - name: Generate SHA-256 checksum
+        run: |
+          cd .artifacts/dist
+          shasum -a 256 FlashScope.dmg > FlashScope.dmg.sha256
+          cat FlashScope.dmg.sha256
+
+      - name: Upload CI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FlashScope-macOS-${{ github.sha }}
+          path: |
+            .artifacts/dist/FlashScope.dmg
+            .artifacts/dist/FlashScope.dmg.sha256
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Create or update GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="$GITHUB_REF_NAME"
+          DMG=".artifacts/dist/FlashScope.dmg"
+          CHECKSUM=".artifacts/dist/FlashScope.dmg.sha256"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload \
+              "$TAG" \
+              "$DMG" \
+              "$CHECKSUM" \
+              --clobber
+          else
+            gh release create \
+              "$TAG" \
+              "$DMG" \
+              "$CHECKSUM" \
+              --title "FlashScope $TAG" \
+              --generate-notes
+          fi
