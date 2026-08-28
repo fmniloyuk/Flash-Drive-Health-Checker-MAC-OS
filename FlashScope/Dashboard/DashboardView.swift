@@ -12,8 +12,19 @@ struct DashboardView: View {
                     OverviewCard(drive: drive, volume: volume, diagnosis: model.diagnosis, connection: model.connection)
 
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 360), spacing: 16)], spacing: 16) {
-                        ConnectionCard(drive: drive, connection: model.connection, diagnosis: model.diagnosis)
-                        FilesystemCard(volume: volume, result: model.filesystemCheck, isVerifying: model.isVerifyingFilesystem, verifyAction: verifyFilesystem)
+                        ConnectionCard(
+                            drive: drive,
+                            connection: model.connection,
+                            diagnosis: model.diagnosis,
+                            refreshAction: { Task { await model.refresh() } }
+                        )
+                        FilesystemCard(
+                            volume: volume,
+                            result: model.filesystemCheck,
+                            isVerifying: model.isVerifyingFilesystem,
+                            verifyAction: verifyFilesystem,
+                            refreshAction: { Task { await model.refresh() } }
+                        )
                     }
 
                     PerformanceCard(
