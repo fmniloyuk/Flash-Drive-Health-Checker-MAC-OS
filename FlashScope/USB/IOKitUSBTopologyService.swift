@@ -13,33 +13,52 @@ struct IOKitUSBTopologyService: USBTopologyService {
     }
 
     private func inspect(drive: PhysicalDrive) -> USBConnection {
-        guard let matching = IOServiceMatching("IOMedia") else { return .init() }
+        guard let mediaService = matchingMediaService(forBSDName: drive.bsdName) else {
+            logger.info("Could not locate the IOMedia registry entry for \(drive.bsdName, privacy: .public)")
+            return .init(
+                declaredSpecification: .unavailable("The selected disk could not be matched to its IORegistry media object"),
+                negotiatedSpeed: .unavailable("USB link information could not be associated with the selected disk")
+            )
+        }
+        defer { IOObjectRelease(mediaService) }
+        return inspectUSBAncestors(startingAt: mediaService)
+    }
+
+    /// Finds the exact IOMedia object for the selected BSD disk name.
+    ///
+    /// The previous implementation used a `defer` while mutating the iterator's
+    /// service variable. That could release the next registry object rather than
+    /// the object just inspected. Keeping each IOObject lifetime explicit avoids
+    /// invalid registry handles and makes USB ancestry lookup deterministic.
+    private func matchingMediaService(forBSDName bsdName: String) -> io_service_t? {
+        guard let matching = IOServiceMatching("IOMedia") else { return nil }
         var iterator: io_iterator_t = 0
-        guard IOServiceGetMatchingServices(kIOMainPortDefault, matching, &iterator) == KERN_SUCCESS else { return .init() }
+        guard IOServiceGetMatchingServices(kIOMainPortDefault, matching, &iterator) == KERN_SUCCESS else { return nil }
         defer { IOObjectRelease(iterator) }
 
-        var service = IOIteratorNext(iterator)
-        while service != 0 {
-            defer { IOObjectRelease(service) }
-            if let bsdName = property("BSD Name", service: service) as? String, bsdName == drive.bsdName {
-                return inspectUSBAncestors(startingAt: service)
+        while true {
+            let service = IOIteratorNext(iterator)
+            guard service != 0 else { return nil }
+            if let foundName = property("BSD Name", service: service) as? String, foundName == bsdName {
+                // Caller owns the +1 reference returned by IOIteratorNext.
+                return service
             }
-            service = IOIteratorNext(iterator)
+            IOObjectRelease(service)
         }
-        logger.info("USB topology was unavailable for one selected removable drive")
-        return .init(
-            declaredSpecification: .unavailable("USB descriptor not exposed through IORegistry"),
-            negotiatedSpeed: .unavailable("Negotiated speed not exposed through IORegistry")
-        )
     }
 
     private func inspectUSBAncestors(startingAt service: io_registry_entry_t) -> USBConnection {
         var current = service
         var ownedCurrent = false
         var topology: [USBTopologyNode] = []
-        var usbProperties: [String: Any]?
+        var usbPropertySets: [[String: Any]] = []
         var hubDetected = false
 
+        // Walk the complete IOService ancestry. USB bridges differ significantly:
+        // useful properties may live on IOUSBHostDevice, an interface/nub, a hub
+        // node, or another USB-labelled parent. We therefore collect conservative
+        // evidence from every USB-relevant ancestor rather than depending on one
+        // exact class name.
         while true {
             var parent: io_registry_entry_t = 0
             guard IORegistryEntryGetParentEntry(current, kIOServicePlane, &parent) == KERN_SUCCESS else { break }
@@ -49,56 +68,96 @@ struct IOKitUSBTopologyService: USBTopologyService {
 
             let className = ioClassName(current)
             let registryName = ioRegistryName(current)
-            if className.localizedCaseInsensitiveContains("usb") || registryName.localizedCaseInsensitiveContains("usb") {
-                topology.append(.init(id: "\(current)", name: registryName.isEmpty ? className : registryName, kind: className))
+            let props = properties(current)
+            let usbRelevant = isUSBRelevant(className: className, registryName: registryName, properties: props)
+
+            if usbRelevant {
+                usbPropertySets.append(props)
+                topology.append(.init(
+                    id: "\(current)",
+                    name: registryName.isEmpty ? className : registryName,
+                    kind: className
+                ))
             }
             if className.localizedCaseInsensitiveContains("hub") || registryName.localizedCaseInsensitiveContains("hub") {
                 hubDetected = true
             }
-            if className == "IOUSBHostDevice" || className.localizedCaseInsensitiveContains("USBDevice") {
-                usbProperties = properties(current)
-                break
-            }
         }
         if ownedCurrent { IOObjectRelease(current) }
 
-        guard let props = usbProperties else {
+        guard !usbPropertySets.isEmpty else {
+            logger.info("No USB-relevant ancestor properties were exposed for selected removable drive")
             return .init(
-                declaredSpecification: .unavailable("No USB device ancestor was exposed"),
-                negotiatedSpeed: .unavailable("Negotiated speed unavailable"),
+                declaredSpecification: .unavailable("No USB device ancestor was exposed for this disk"),
+                negotiatedSpeed: .unavailable("Negotiated USB speed was not exposed for this disk"),
                 topology: topology,
-                hubOrAdapterDetected: topology.isEmpty ? .unavailable("Topology unavailable") : .available(hubDetected)
+                hubOrAdapterDetected: topology.isEmpty ? .unavailable("USB topology unavailable") : .available(hubDetected)
             )
         }
 
-        let bcdUSB = number(props["bcdUSB"] ?? props["USB Device Release Number"])
+        // bcdUSB is the USB specification release. Do not fall back to bcdDevice /
+        // "USB Device Release Number", which describes the product release and is
+        // not evidence of USB 2/3/4 capability.
+        let bcdUSB = number(firstProperty(["bcdUSB"], in: usbPropertySets))
         let declared = USBDescriptorParser.specification(fromBCDUSB: bcdUSB)
-        let speedProperty = props["USB Speed"] ?? props["USBSpeed"] ?? props["Device Speed"]
+
+        let speedProperty = firstProperty(["USBSpeed", "USB Speed", "Device Speed"], in: usbPropertySets)
         let negotiated: EvidenceAvailability<USBLinkSpeed>
         if let text = speedProperty as? String {
             negotiated = USBDescriptorParser.negotiatedSpeed(fromDescriptor: text)
-        } else if speedProperty == nil {
-            negotiated = .unavailable("Negotiated speed not exposed")
+        } else if let numeric = number(speedProperty) {
+            negotiated = USBDescriptorParser.negotiatedSpeed(fromNumericDescriptor: numeric)
         } else {
-            negotiated = .unavailable("macOS exposed a numeric speed descriptor that FlashScope does not guess at")
+            negotiated = .unavailable("The USB ancestors were found, but macOS did not expose a recognized negotiated-speed property")
         }
-        let vendor = number(props["idVendor"] ?? props["USB Vendor ID"]).map { UInt16(truncatingIfNeeded: $0) }
-        let product = number(props["idProduct"] ?? props["USB Product ID"]).map { UInt16(truncatingIfNeeded: $0) }
-        let location = number(props["locationID"]).map { String(format: "0x%08X", $0) }
-        let allocated = number(props["USB Power"] ?? props["Current Required"] ?? props["Requested Power"]).map { Int(clamping: $0) }
-        let available = number(props["Bus Power Available"] ?? props["Available Power"]).map { Int(clamping: $0) }
+
+        let vendor = number(firstProperty(["idVendor", "USB Vendor ID", "VendorID"], in: usbPropertySets))
+            .map { UInt16(truncatingIfNeeded: $0) }
+        let product = number(firstProperty(["idProduct", "USB Product ID", "ProductID"], in: usbPropertySets))
+            .map { UInt16(truncatingIfNeeded: $0) }
+        let location = number(firstProperty(["locationID", "LocationID"], in: usbPropertySets))
+            .map { String(format: "0x%08X", $0) }
+
+        let allocated = number(firstProperty(
+            ["Current Required", "USB Power", "Requested Power", "Device Power"],
+            in: usbPropertySets
+        )).map { Int(clamping: $0) }
+        let available = number(firstProperty(
+            ["AAPL,current-available", "Current Available", "Bus Power Available", "Available Power"],
+            in: usbPropertySets
+        )).map { Int(clamping: $0) }
 
         return USBConnection(
             declaredSpecification: declared,
             negotiatedSpeed: negotiated,
-            vendorID: vendor.map { .available($0) } ?? .unavailable("Vendor identifier unavailable"),
-            productID: product.map { .available($0) } ?? .unavailable("Product identifier unavailable"),
-            portPath: location.map { .available($0) } ?? .unavailable("Port path unavailable"),
+            vendorID: vendor.map { .available($0) } ?? .unavailable("Vendor identifier not exposed by the USB device/bridge"),
+            productID: product.map { .available($0) } ?? .unavailable("Product identifier not exposed by the USB device/bridge"),
+            portPath: location.map { .available($0) } ?? .unavailable("USB location identifier not exposed"),
             topology: Array(topology.reversed()),
             hubOrAdapterDetected: .available(hubDetected),
-            allocatedMilliAmps: allocated.map { .available($0) } ?? .unavailable("Power allocation unavailable"),
-            availableMilliAmps: available.map { .available($0) } ?? .unavailable("Available bus power unavailable")
+            allocatedMilliAmps: allocated.map { .available($0) } ?? .unavailable("Requested USB current not exposed"),
+            availableMilliAmps: available.map { .available($0) } ?? .unavailable("Available USB bus current not exposed")
         )
+    }
+
+    private func isUSBRelevant(className: String, registryName: String, properties: [String: Any]) -> Bool {
+        if className.localizedCaseInsensitiveContains("usb") || registryName.localizedCaseInsensitiveContains("usb") {
+            return true
+        }
+        let evidenceKeys = [
+            "bcdUSB", "USBSpeed", "USB Speed", "idVendor", "idProduct",
+            "USB Vendor ID", "USB Product ID", "locationID", "AAPL,current-available"
+        ]
+        return evidenceKeys.contains { properties[$0] != nil }
+    }
+
+    private func firstProperty(_ keys: [String], in propertySets: [[String: Any]]) -> Any? {
+        for properties in propertySets {
+            for key in keys {
+                if let value = properties[key] { return value }
+            }
+        }
+        return nil
     }
 
     private func properties(_ service: io_registry_entry_t) -> [String: Any] {
@@ -115,6 +174,15 @@ struct IOKitUSBTopologyService: USBTopologyService {
     private func number(_ value: Any?) -> UInt64? {
         if let value = value as? NSNumber { return value.uint64Value }
         if let value = value as? UInt64 { return value }
+        if let value = value as? UInt32 { return UInt64(value) }
+        if let value = value as? Int, value >= 0 { return UInt64(value) }
+        if let text = value as? String {
+            let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+            if trimmed.lowercased().hasPrefix("0x") {
+                return UInt64(trimmed.dropFirst(2), radix: 16)
+            }
+            return UInt64(trimmed)
+        }
         return nil
     }
 
