@@ -33,6 +33,9 @@ final class AppPreferences {
     var redactIdentifiers: Bool { didSet { defaults.set(redactIdentifiers, forKey: "redactIdentifiers") } }
     var automaticCleanupChecks: Bool { didSet { defaults.set(automaticCleanupChecks, forKey: "automaticCleanupChecks") } }
     var throughputUnit: ThroughputUnit { didSet { defaults.set(throughputUnit.rawValue, forKey: "throughputUnit") } }
+    var workload: StorageWorkload { didSet { defaults.set(workload.rawValue, forKey: "workload") } }
+    var anonymousIntelligenceOptIn: Bool { didSet { defaults.set(anonymousIntelligenceOptIn, forKey: "anonymousIntelligenceOptIn") } }
+    var technicianMode: Bool { didSet { defaults.set(technicianMode, forKey: "technicianMode") } }
     var advancedRawReadEnabled: Bool { didSet { defaults.set(false, forKey: "advancedRawReadEnabled") } }
     var appearance: Appearance { didSet { defaults.set(appearance.rawValue, forKey: "appearance") } }
 
@@ -48,6 +51,9 @@ final class AppPreferences {
         redactIdentifiers = defaults.object(forKey: "redactIdentifiers") as? Bool ?? true
         automaticCleanupChecks = defaults.object(forKey: "automaticCleanupChecks") as? Bool ?? true
         throughputUnit = ThroughputUnit(rawValue: defaults.string(forKey: "throughputUnit") ?? "") ?? .megabytesPerSecond
+        workload = StorageWorkload(rawValue: defaults.string(forKey: "workload") ?? "") ?? .general
+        anonymousIntelligenceOptIn = defaults.object(forKey: "anonymousIntelligenceOptIn") as? Bool ?? false
+        technicianMode = defaults.object(forKey: "technicianMode") as? Bool ?? false
         advancedRawReadEnabled = false
         appearance = Appearance(rawValue: defaults.string(forKey: "appearance") ?? "") ?? .system
     }

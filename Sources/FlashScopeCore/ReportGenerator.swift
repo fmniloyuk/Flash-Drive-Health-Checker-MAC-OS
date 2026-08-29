@@ -79,43 +79,136 @@ public struct DefaultReportGenerator: ReportGenerator {
 
     public func plainTextReport(for session: TestSession, options: ReportRedactionOptions) -> String {
         let report = envelope(for: session, options: options)
+        let coverage = DiagnosticInsightAnalyzer.evidenceCoverage(
+            drive: session.drive,
+            volume: session.volume,
+            connection: session.connection,
+            benchmark: session.benchmark,
+            filesystemCheck: session.filesystemCheck,
+            healthSignals: session.healthSignals
+        )
+        let primary = report.diagnosis.findings
+            .filter { $0.severity > .info }
+            .sorted {
+                if $0.severity != $1.severity { return $0.severity > $1.severity }
+                return $0.confidence > $1.confidence
+            }
+            .first
+
         var lines = [
-            "FlashScope Diagnostic Report",
+            "FlashScope Diagnostic Evidence Certificate",
+            "========================================",
             "Application version: \(report.applicationVersion)",
             "Report version: \(report.reportVersion)",
             "Generated: \(ISO8601DateFormatter().string(from: report.reportGeneratedAt)) (\(report.timezone))",
             "Schema: \(report.schemaVersion)",
             "",
+            "VERDICT",
+            "-------",
+            "Classification: \(report.diagnosis.assessment.classification.rawValue)",
+            "Diagnostic confidence: \(Int(report.diagnosis.assessment.confidence * 100))%",
+            "Evidence coverage: \(coverage.availableSignals)/\(coverage.totalSignals) (\(coverage.percentage)%)",
+            "Summary: \(report.diagnosis.assessment.summary)",
+            "Primary cause: \(primary?.title ?? "No high-priority cause identified")",
+            "Recommended next step: \(primary?.recommendedAction ?? "Retest if behavior changes or additional evidence becomes available.")",
+            "",
+            "DEVICE / VOLUME",
+            "---------------",
             "Device: \(report.device.displayName)",
             "Capacity: \(StorageFormatting.bytes(report.device.capacityBytes))",
             "Volume: \(report.volume.name)",
             "Filesystem: \(report.volume.filesystem.value?.rawValue ?? "Unavailable")",
+            "Partition scheme: \(report.volume.partitionScheme.value?.rawValue ?? "Unavailable")",
+            "Free space: \(StorageFormatting.bytes(report.volume.availableBytes)) (\(Int(report.volume.freeFraction * 100))%)",
             "Mount: \(report.volume.mountPath)",
-            "Health: \(report.diagnosis.assessment.classification.rawValue)",
-            "Diagnostic confidence: \(Int(report.diagnosis.assessment.confidence * 100))%"
+            "Write state: \(report.volume.isReadOnly ? "Read-only" : "Writable")",
+            "",
+            "CONNECTION",
+            "----------",
+            "Declared USB capability: \((report.connection.declaredSpecification.value ?? session.drive.capabilities.declaredUSBSpecification.value)?.rawValue ?? "Unavailable")",
+            "Negotiated USB speed: \(report.connection.negotiatedSpeed.value?.label ?? "Unavailable")",
+            "Hub/adapter detected: \(report.connection.hubOrAdapterDetected.value.map { $0 ? "Yes" : "No" } ?? "Unavailable")"
         ]
-        if let speed = report.connection.negotiatedSpeed.value { lines.append("Negotiated USB speed: \(speed.label)") }
+
         if let benchmark = report.benchmark {
+            let stability = DiagnosticInsightAnalyzer.stability(for: benchmark)
             lines += [
+                "",
+                "PERFORMANCE / INTEGRITY",
+                "-----------------------",
+                "Profile: \(benchmark.configuration.preset.rawValue)",
+                "Temporary data written: \(StorageFormatting.bytes(benchmark.configuration.sizeBytes))",
                 "Sequential write: \(String(format: "%.1f MB/s", benchmark.writeMegabytesPerSecond))",
                 "Sequential read: \(String(format: "%.1f MB/s", benchmark.readMegabytesPerSecond))",
+                "Stability: \(stability.label) (\(stability.score)/100)",
+                "Variation: \(stability.variationPercent)%",
+                "Deep stalls: \(stability.stallCount)",
                 "Integrity: \(benchmark.integrity.status.rawValue)",
+                "I/O errors: \(benchmark.ioErrorCount)",
                 "Cleanup: \(benchmark.cleanupStatus.rawValue)",
-                "Read cache caveat: file-level read may be affected by macOS caching"
+                "Durable write flush included: \(benchmark.durableFlushIncluded ? "Yes" : "No")"
             ]
+            if let cliff = DiagnosticInsightAnalyzer.cacheCliff(for: benchmark), cliff.detected {
+                lines += [
+                    "Write-cache cliff: detected",
+                    "Burst median: \(String(format: "%.1f MB/s", cliff.burstMegabytesPerSecond))",
+                    "Sustained median: \(String(format: "%.1f MB/s", cliff.sustainedMegabytesPerSecond))",
+                    "Observed drop: \(cliff.dropPercent)%",
+                    "Estimated cliff point: \(cliff.estimatedCliffBytes.map(StorageFormatting.bytes) ?? "Unavailable")"
+                ]
+            }
+            if benchmark.configuration.preset == .custom {
+                lines.append("Capacity-integrity note: this certificate covers the tested free-space sample only; occupied/untested capacity was not overwritten.")
+            }
+        } else {
+            lines += ["", "PERFORMANCE / INTEGRITY", "-----------------------", "No benchmark was run in this session."]
         }
-        lines.append("")
-        lines.append("Prioritized findings:")
-        for (index, finding) in report.diagnosis.findings.enumerated() {
-            lines.append("\(index + 1). \(finding.title) — \(finding.explanation)")
-            lines.append("   Action: \(finding.recommendedAction)")
-            if let caveat = finding.caveat { lines.append("   Caveat: \(caveat)") }
+
+        lines += [
+            "",
+            "FILESYSTEM VERIFICATION",
+            "-----------------------",
+            "Status: \(report.filesystemCheck.status.rawValue)",
+            "Summary: \(report.filesystemCheck.summary)",
+            "Repair performed by FlashScope: No",
+            "",
+            "PRIORITIZED FINDINGS",
+            "--------------------"
+        ]
+        if report.diagnosis.findings.isEmpty {
+            lines.append("No specific findings from the available evidence.")
+        } else {
+            for (index, finding) in report.diagnosis.findings.enumerated() {
+                lines.append("\(index + 1). [\(finding.severity)] \(finding.title) — confidence \(Int(finding.confidence * 100))%")
+                lines.append("   Why: \(finding.explanation)")
+                lines.append("   Impact: \(finding.expectedImpact)")
+                lines.append("   Action: \(finding.recommendedAction)")
+                for evidence in finding.evidence {
+                    lines.append("   Evidence: \(evidence.label) = \(evidence.value)")
+                }
+                if let caveat = finding.caveat { lines.append("   Caveat: \(caveat)") }
+            }
         }
+
         if !report.diagnosis.limitations.isEmpty {
             lines.append("")
-            lines.append("Limitations:")
+            lines.append("LIMITATIONS")
+            lines.append("-----------")
             lines.append(contentsOf: report.diagnosis.limitations.map { "- \($0)" })
         }
+
+        lines += [
+            "",
+            "METHODOLOGY / SAFETY",
+            "--------------------",
+            "Read cache caveat: \(report.methodology.readCacheCaveat)",
+            "Integrity algorithm: \(report.methodology.integrityAlgorithm)",
+            "Cleanup guarantee: \(report.methodology.cleanupGuarantee)",
+            "Flash wear notice: \(report.methodology.flashWearNotice)",
+            "",
+            "This certificate records evidence observed at the time of testing. It does not guarantee future reliability. Maintain independent backups of important data."
+        ]
+
         return lines.joined(separator: "\n")
     }
 

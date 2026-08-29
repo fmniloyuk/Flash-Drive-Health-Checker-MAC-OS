@@ -69,17 +69,30 @@ final class FlashScopeUITests: XCTestCase {
     }
 
     @MainActor
-    func testFindingsAndAccessibilityIdentifiers() throws {
+    func testFindingsAndDiagnosticViews() throws {
         let app = simulatedApp()
         app.launch()
         app.descendants(matching: .any)["sidebar-drive-sim-disk-4"].click()
 
         let findingsExists = app.otherElements["findings-card"].waitForExistence(timeout: 3)
-        let connectionExists = app.otherElements["connection-card"].exists
-        let filesystemExists = app.otherElements["filesystem-card"].exists
         XCTAssertTrue(findingsExists)
+
+        let diagnoseButton = app.buttons["Diagnose"]
+        let diagnoseExists = diagnoseButton.waitForExistence(timeout: 2)
+        XCTAssertTrue(diagnoseExists)
+        diagnoseButton.click()
+
+        let connectionExists = app.otherElements["connection-card"].waitForExistence(timeout: 2)
+        let filesystemExists = app.otherElements["filesystem-card"].exists
         XCTAssertTrue(connectionExists)
         XCTAssertTrue(filesystemExists)
+
+        let technicalButton = app.buttons["Technical"]
+        if technicalButton.exists {
+            technicalButton.click()
+            let technicalExists = app.otherElements["technical-evidence-card"].waitForExistence(timeout: 2)
+            XCTAssertTrue(technicalExists)
+        }
     }
 
     @MainActor
@@ -92,7 +105,7 @@ final class FlashScopeUITests: XCTestCase {
         let menuExists = menu.waitForExistence(timeout: 3)
         XCTAssertTrue(menuExists)
         menu.click()
-        app.menuItems["JSON Report…"].click()
+        app.menuItems["JSON Diagnostic Report…"].click()
 
         let sheetExists = app.sheets.firstMatch.waitForExistence(timeout: 2)
         let dialogExists = app.dialogs.firstMatch.waitForExistence(timeout: 2)

@@ -6,30 +6,40 @@ struct SettingsView: View {
 
     var body: some View {
         Form {
-            Section("Benchmark") {
-                Picker("Default size", selection: $preferences.defaultPreset) {
+            Section("Diagnostics") {
+                Picker("Default check", selection: $preferences.defaultPreset) {
                     Text("Quick — 256 MiB").tag(BenchmarkPreset.quick)
                     Text("Standard — 1 GiB").tag(BenchmarkPreset.standard)
-                    Text("Extended — 4 GiB").tag(BenchmarkPreset.extended)
+                    Text("Deep — 4 GiB").tag(BenchmarkPreset.extended)
                 }
+                Picker("Typical workload", selection: $preferences.workload) {
+                    ForEach(StorageWorkload.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                }
+                Toggle("Enable small-file workload by default", isOn: $preferences.includeSmallFileTest)
                 HStack {
                     Text("Sample interval")
                     Slider(value: $preferences.sampleInterval, in: 0.1...2.0, step: 0.1)
                     Text(String(format: "%.1f s", preferences.sampleInterval)).monospacedDigit().frame(width: 44)
                 }
-                Toggle("Enable small-file workload by default", isOn: $preferences.includeSmallFileTest)
                 Picker("Throughput units", selection: $preferences.throughputUnit) {
                     ForEach(ThroughputUnit.allCases, id: \.self) { Text($0.rawValue).tag($0) }
                 }
             }
 
-            Section("Privacy & History") {
+            Section("Privacy, Intelligence & History") {
                 Picker("History retention", selection: $preferences.historyRetention) {
                     ForEach(AppPreferences.HistoryRetention.allCases) { Text($0.title).tag($0) }
                 }
                 Toggle("Redact device identifiers in exports", isOn: $preferences.redactIdentifiers)
                 Toggle("Check safely identifiable orphaned benchmark data on launch", isOn: $preferences.automaticCleanupChecks)
-                Text("Reports are never uploaded. Filenames and directory listings are not collected. Usernames in mount paths are always redacted in normal exports.")
+                Toggle("Prepare anonymous community-baseline contributions", isOn: $preferences.anonymousIntelligenceOptIn)
+                Text("Opt-in only. FlashScope does not upload anything automatically in this build. When enabled, Export can prepare a privacy-minimized JSON contribution containing device-family/USB metadata and aggregate diagnostic results, never filenames, directory listings, clear serial numbers, or user paths.")
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+
+            Section("Technician / Lab") {
+                Toggle("Technician mode", isOn: $preferences.technicianMode)
+                Text("Adds evidence coverage, lab triage, raw identifiers that macOS exposes, repeatability context, and support-certificate shortcuts. It never enables destructive operations.")
                     .font(.caption).foregroundStyle(.secondary)
             }
 
@@ -49,7 +59,7 @@ struct SettingsView: View {
         }
         .formStyle(.grouped)
         .padding(12)
-        .frame(width: 560, height: 530)
+        .frame(width: 600, height: 650)
         .navigationTitle("FlashScope Settings")
     }
 }

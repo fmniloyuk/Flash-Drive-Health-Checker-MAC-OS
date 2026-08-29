@@ -56,6 +56,13 @@ public actor OrphanedBenchmarkCleanupService {
         guard let entries = try? manager.contentsOfDirectory(at: mountRoot, includingPropertiesForKeys: nil) else { return [] }
         var notices: [CleanupRecoveryNotice] = []
         for directory in entries where directory.lastPathComponent.hasPrefix(SafeTemporaryPath.directoryPrefix) {
+            // Preserve the caller's mount-root representation in user-visible notices. On macOS,
+            // FileManager may enumerate an equivalent canonical /private/var/... URL even when
+            // temporaryDirectory was supplied as /var/.... Cleanup validation still uses the
+            // enumerated URL and inode/device identities; this only stabilizes the reported path.
+            let reportedPath = mountRoot
+                .appendingPathComponent(directory.lastPathComponent, isDirectory: true)
+                .path
             do {
                 try SafeTemporaryPath.validateOwnedDirectory(directory, mountRoot: mountRoot)
                 let token = String(directory.lastPathComponent.dropFirst(SafeTemporaryPath.directoryPrefix.count))
@@ -65,13 +72,13 @@ public actor OrphanedBenchmarkCleanupService {
                 let markerData = try Data(contentsOf: markerURL, options: [.mappedIfSafe])
                 let marker = try JSONDecoder().decode(BenchmarkOwnershipMarker.self, from: markerData)
                 guard marker.owner == BenchmarkOwnershipMarker.owner, marker.schemaVersion == BenchmarkOwnershipMarker.schemaVersion, marker.token == token else {
-                    notices.append(.init(path: directory.path, cleaned: false, message: "Ownership marker did not match; FlashScope left the directory untouched."))
+                    notices.append(.init(path: reportedPath, cleaned: false, message: "Ownership marker did not match; FlashScope left the directory untouched."))
                     continue
                 }
                 let children = try manager.contentsOfDirectory(at: directory, includingPropertiesForKeys: nil)
                 let allowed = Set([SafeTemporaryPath.benchmarkFilename, Self.markerFilename])
                 guard children.allSatisfy({ allowed.contains($0.lastPathComponent) }) else {
-                    notices.append(.init(path: directory.path, cleaned: false, message: "Unexpected files were present; automatic cleanup was intentionally refused."))
+                    notices.append(.init(path: reportedPath, cleaned: false, message: "Unexpected files were present; automatic cleanup was intentionally refused."))
                     continue
                 }
                 if let payload = children.first(where: { $0.lastPathComponent == SafeTemporaryPath.benchmarkFilename }) {
@@ -82,9 +89,9 @@ public actor OrphanedBenchmarkCleanupService {
                 try SafeTemporaryPath.validateFile(markerURL, expectedIdentity: markerIdentity)
                 guard unlink(markerURL.path) == 0 else { throw POSIXError(.EIO) }
                 guard rmdir(directory.path) == 0 else { throw POSIXError(.EIO) }
-                notices.append(.init(path: directory.path, cleaned: true, message: "Recovered and removed a verified orphaned FlashScope benchmark workspace."))
+                notices.append(.init(path: reportedPath, cleaned: true, message: "Recovered and removed a verified orphaned FlashScope benchmark workspace."))
             } catch {
-                notices.append(.init(path: directory.path, cleaned: false, message: "Automatic cleanup was refused: \(error.localizedDescription)"))
+                notices.append(.init(path: reportedPath, cleaned: false, message: "Automatic cleanup was refused: \(error.localizedDescription)"))
             }
         }
         return notices

@@ -40,6 +40,9 @@ jobs:
       - name: Make build script executable
         run: chmod +x Scripts/build_dmg.sh
 
+      - name: Run portable core tests
+        run: swift test -c debug
+
       - name: Run Xcode tests
         run: |
           xcodebuild \
