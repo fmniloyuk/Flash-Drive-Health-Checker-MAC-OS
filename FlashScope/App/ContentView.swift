@@ -15,7 +15,11 @@ struct ContentView: View {
             if model.drives.isEmpty && !model.isRefreshing {
                 emptyState
             } else if model.selectedDrive != nil {
-                DashboardView(model: model, verifyFilesystem: { showVerificationConfirmation = true })
+                DashboardView(
+                    model: model,
+                    verifyFilesystem: { showVerificationConfirmation = true },
+                    retestAction: { showHealthCheck = true }
+                )
             } else {
                 ContentUnavailableView("Select a USB drive", systemImage: "externaldrive", description: Text("Choose a removable USB storage device from the sidebar."))
             }
@@ -47,7 +51,7 @@ struct ContentView: View {
         ContentUnavailableView {
             Label("No removable USB drives", systemImage: "externaldrive.badge.plus")
         } description: {
-            Text("Connect a USB flash drive. FlashScope will inspect it without modifying data until you explicitly start a benchmark.")
+            Text("Connect a USB flash drive. FlashScope will inspect it without modifying data until you explicitly start a diagnostic check.")
         } actions: {
             Button("Refresh") { Task { await model.refresh() } }
                 .accessibilityIdentifier("empty-refresh-button")
@@ -67,18 +71,21 @@ struct ContentView: View {
                 Button(role: .cancel) { model.cancelBenchmark() } label: { Label("Cancel Test", systemImage: "stop.circle") }
                     .accessibilityIdentifier("cancel-benchmark-button")
             } else {
-                Button { showHealthCheck = true } label: { Label("Health Check", systemImage: "stethoscope") }
+                Button { showHealthCheck = true } label: { Label("Run Check", systemImage: "stethoscope") }
                     .disabled(model.suggestedBenchmarkConfiguration() == nil)
-                    .help("Review preflight and start a safe benchmark")
+                    .help("Choose Quick, Standard, Deep, or Capacity Integrity diagnostics")
                     .accessibilityIdentifier("health-check-button")
             }
 
             Menu {
-                Button("PDF Report…") { export(.pdf) }
-                Button("JSON Report…") { export(.json) }
-                Button("Plain Text…") { export(.text) }
+                Button("PDF Evidence Report…") { export(.pdf) }
+                Button("JSON Diagnostic Report…") { export(.json) }
+                Button("Text Evidence Certificate…") { export(.text) }
                 Divider()
-                Button("Copy Support Summary") { copySummary() }
+                Button("Copy Support Certificate") { copySummary() }
+                if model.preferences.anonymousIntelligenceOptIn {
+                    Button("Copy Anonymous Baseline Contribution") { copyAnonymousContribution() }
+                }
             } label: {
                 Label("Export", systemImage: "square.and.arrow.up")
             }
@@ -103,6 +110,16 @@ struct ContentView: View {
     private func copySummary() {
         guard let session = model.currentSession() else { return }
         ReportExportController.copySupportSummary(session: session, reports: model.services.reports, redactIdentifiers: model.preferences.redactIdentifiers)
-        model.notice = .init(title: "Support summary copied", message: "A redacted plain-text diagnostic summary is on the clipboard.")
+        model.notice = .init(title: "Support certificate copied", message: "A redacted plain-text diagnostic evidence certificate is on the clipboard.")
+    }
+
+    private func copyAnonymousContribution() {
+        guard let session = model.currentSession() else { return }
+        do {
+            try ReportExportController.copyAnonymousContribution(session: session)
+            model.notice = .init(title: "Anonymous contribution copied", message: "The privacy-minimized baseline payload is on the clipboard. FlashScope did not upload it anywhere.")
+        } catch {
+            model.notice = .init(title: "Couldn’t prepare contribution", message: error.localizedDescription)
+        }
     }
 }
